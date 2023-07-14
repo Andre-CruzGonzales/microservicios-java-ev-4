@@ -1,0 +1,30 @@
+server:
+  port: 8888
+ 
+spring:
+  application:
+    name: micro-admin-config-server
+
+#configuracion local
+  profiles:
+    active: native
+
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: D:\spring-boot\workspace\micro-admin-config-server
+          
+#configuracion cloud GIT
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/Andre-CruzGonzales/microservicios-java-ev-4.git
+#          searchPaths: micro-admin-config-server
+#          username: Andre-CruzGonzales
+#          password: Cruz1210.
+#          default-label: main
+#          cloneOnStart: true
+#          ignore-local-ssh-settings: true
+
